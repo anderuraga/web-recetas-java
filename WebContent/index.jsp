@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<%@page import="com.ipartek.formacion.hola.pojo.Receta"%>
+<%@page import="com.ipartek.formacion.recetas.pojo.Receta"%>
 <%@page import="java.util.ArrayList"%>
 <html lang="es">
 
