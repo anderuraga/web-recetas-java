@@ -2,9 +2,11 @@ package com.ipartek.formacion.recetas;
 
 public class Dado {
 
-	static String[] aAlumnos = { "Aaron", "Eneko", "Itsaso", "Ivan",
-			"Guillermo", "Lozoya", "Josu", "Ignacio", "Gomez", "Nerea",
-			"Nagore", "Garbieñe", "Egoitz", "Pavel", "Pérez" };
+	final static int NUM_MAX_ALUMNOS = 15;
+	static String alumnoAfortunado;
+
+	static String[] aAlumnos = { "Aaron", "Eneko", "Itsaso", "Ivan", "Guillermo", "Lozoya", "Josu", "Ignacio", "Gomez",
+			"Nerea", "Nagore", "Garbieñe", "Egoitz", "Pavel", "Pérez" };
 
 	public static void listar() {
 
@@ -23,8 +25,7 @@ public class Dado {
 
 	public static void main(String[] args) {
 
-		int numeroAleatorio = Utilidades
-				.getNumeroAleatorio((aAlumnos.length - 1));
+		int numeroAleatorio = Utilidades.getNumeroAleatorio((aAlumnos.length - 1));
 		String afortunado = aAlumnos[numeroAleatorio];
 
 		System.out.println("El/a afortunad@ es: " + afortunado);

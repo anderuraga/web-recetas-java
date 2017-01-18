@@ -21,6 +21,17 @@ public class Utilidades {
 	}
 
 	/**
+	 * Ordenacion en burbuja para un array de enteros
+	 * 
+	 * @see https://www.youtube.com/watch?v=lyZQPjUT5B4
+	 * @param aDesordenado
+	 * @return
+	 */
+	static public int[] bubbleSort(int[] aDesordenado) {
+		return aDesordenado;
+	}
+
+	/**
 	 * Suma muy rara que se inventa el jefe, no me digas para que
 	 * 
 	 * @param num1
