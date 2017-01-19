@@ -28,7 +28,23 @@ public class Utilidades {
 	 * @return
 	 */
 	static public int[] bubbleSort(int[] aDesordenado) {
-		return aDesordenado;
+		int[] aOrdenado = aDesordenado;
+		boolean flag = true; // set flag to true to begin first pass
+		int temp; // holding variable
+
+		while (flag) {
+			flag = false;
+			for (int j = 0; j < aOrdenado.length - 1; j++) {
+				if (aOrdenado[j] > aOrdenado[j + 1]) {
+					temp = aOrdenado[j];
+					aOrdenado[j] = aOrdenado[j + 1];
+					aOrdenado[j + 1] = temp;
+					flag = true;
+				}
+			}
+		}
+
+		return aOrdenado;
 	}
 
 	/**
