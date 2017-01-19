@@ -1,8 +1,13 @@
 package com.ipartek.formacion.recetas.pojo;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
-public class Receta {
+public class Receta implements Comparable<Receta>{
+
+	public static final String FACIL = "facil";
+	public static final String MODERADO = "moderado";
+	public static final String DIFICIL = "dificil";
 
 	public String IMG_DEFAULT = "http://apps.enyojs.com/assets/apps/17daydietmealplan_icon.png";
 
@@ -181,4 +186,24 @@ public class Receta {
 				+ "]";
 	}
 
+	
+
+	@Override
+	public int compareTo(Receta o) {		
+		//pasamos a toLowerCase, para ignorar mayusculas y minusculas
+		return this.getTitulo().toLowerCase().compareTo(o.getTitulo().toLowerCase());
+	}
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
