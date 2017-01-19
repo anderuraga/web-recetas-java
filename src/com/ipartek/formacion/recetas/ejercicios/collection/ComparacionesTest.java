@@ -63,7 +63,28 @@ public class ComparacionesTest {
 	
 	@Test
 	public void testComparator() {
-		//vamos a ordenar por nivel de dificultad de Receta
+		
+		 final String MSG_ERROR_DIFICULTAD = "NO ordena por nivel de dificultad";
+		
+		Collections.sort(recetas, new ComparatorRecetaNivelDificultad() );
+		
+		assertEquals(MSG_ERROR_DIFICULTAD, tortilla, recetas.get(0));
+		assertEquals(MSG_ERROR_DIFICULTAD, solomillo, recetas.get(1));
+		assertEquals(MSG_ERROR_DIFICULTAD, marmitako, recetas.get(2));
+		
 	}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

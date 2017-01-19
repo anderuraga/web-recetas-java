@@ -194,6 +194,8 @@ public class Receta implements Comparable<Receta>{
 		return this.getTitulo().toLowerCase().compareTo(o.getTitulo().toLowerCase());
 	}
 
+	
+	
 }
 
 
