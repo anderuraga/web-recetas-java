@@ -1,6 +1,8 @@
 package com.ipartek.formacion.recetas.ejercicios.herencia;
 
-public class Pajaro extends Animal implements Vendible, Volador {
+import com.ipartek.formacion.recetas.ejercicios.collection.InterfazEstupida;
+
+public class Pajaro extends Animal implements Vendible, Volador, InterfazEstupida {
 
 	private boolean volador;
 	private int numHuevosSemana;
@@ -42,6 +44,11 @@ public class Pajaro extends Animal implements Vendible, Volador {
 	public void generarFactura() {
 		System.out.println("Factura generada");
 
+	}
+
+	@Override
+	public int getPeso() {
+		return this.getNumHuevosSemana();
 	}
 
 }
